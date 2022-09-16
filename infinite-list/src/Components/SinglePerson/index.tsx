@@ -1,6 +1,5 @@
 import styles from "./singlePerson.module.scss";
 import { ISinglePerson } from "./types";
-// import { PrimitivesValidation } from "../../../../../Validation/PrimitivesValidation";
 
 const {card, paragraph, photo} = styles
 
@@ -11,16 +10,6 @@ const SinglePerson = ({
   gender,
   age,
 }: ISinglePerson) => {
-//   const stringsToValidate = [avatar, name, surname];
-
-//   stringsToValidate.forEach((string) => {
-//     if (string === avatar) {
-//       PrimitivesValidation.isImage(avatar);
-//     }
-//     PrimitivesValidation.isLongEnough(1, string);
-//   });
-
-//   PrimitivesValidation.isNumberGreaterThan(0, age);
 
   return (
     <div className={card}>

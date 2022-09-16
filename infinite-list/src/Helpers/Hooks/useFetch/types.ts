@@ -21,7 +21,7 @@ export type TPromiseObject = {
 
  type TFetchData = () => Promise<void>;
 
-export type TUseFetchReturn = {
+export type TUseFetch = {
   isLoading: boolean;
   humanData: IHuman[];
   isError: boolean;

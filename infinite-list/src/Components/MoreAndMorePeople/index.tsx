@@ -1,10 +1,7 @@
 import { SinglePerson } from "../SinglePerson";
 import { IMoreAndMorePeopleProps } from "./types";
-// import { ObjectValidation } from "../../../../../Validation/ObjectValidation";
+
 const MoreAndMorePeople = ({ people }: IMoreAndMorePeopleProps) => {
-  // for (const person of people) {
-  //   ObjectValidation.isObjectLiteralEmpty(person);
-  // }
 
   return (
     <>

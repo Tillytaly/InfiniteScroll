@@ -1,11 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
-import { IHuman, TPromiseObject, TUseFetchReturn } from "./types";
+import { IHuman, TPromiseObject, TUseFetch } from "./types";
 import { v4 as uuidv4 } from "uuid";
 
-// dla " => "
-// type TUseFetch = (endpoint: string) => TUseFetchReturn
 
-function useFetch (endpoint: string): TUseFetchReturn {
+function useFetch (endpoint: string): TUseFetch {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('')
   const [isError, setIsError] = useState(false);
