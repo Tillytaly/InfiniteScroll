@@ -1,4 +1,3 @@
-
 export type TRandomUser = {
   dob: { date: string; age: number };
   name: { title: string; first: string; last: string };
@@ -7,19 +6,19 @@ export type TRandomUser = {
 };
 
 export interface IHuman {
-  id: string,
+  id: string;
   name: string;
-  surname: string
-  age: number
-  avatar: string
-  gender: string
+  surname: string;
+  age: number;
+  avatar: string;
+  gender: string;
 }
 
 export type TPromiseObject = {
   results: TRandomUser[];
 };
 
- type TFetchData = () => Promise<void>;
+type TFetchData = () => Promise<void>;
 
 export type TUseFetch = {
   isLoading: boolean;

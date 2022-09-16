@@ -1,5 +1,3 @@
-
-
 export interface ISinglePerson{
 avatar: string,
 name: string,

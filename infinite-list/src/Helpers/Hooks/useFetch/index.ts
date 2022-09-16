@@ -2,17 +2,16 @@ import { useCallback, useEffect, useState } from "react";
 import { IHuman, TPromiseObject, TUseFetch } from "./types";
 import { v4 as uuidv4 } from "uuid";
 
-
-function useFetch (endpoint: string): TUseFetch {
+function useFetch(endpoint: string): TUseFetch {
   const [isLoading, setIsLoading] = useState(false);
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
   const [humanData, setHumanData] = useState<IHuman[]>([]);
 
   const fetchHumanData = useCallback(async () => {
     try {
       setIsLoading(true);
-      setMessage('...loading')
+      setMessage("...loading");
       const data = await fetch(endpoint);
 
       const response: TPromiseObject = await data.json();
@@ -32,8 +31,8 @@ function useFetch (endpoint: string): TUseFetch {
       });
     } catch (error) {
       setIsError(true);
-      setMessage("Ooops...something went wrong :(")
-      
+      setMessage("Ooops...something went wrong :(");
+
       console.error(error);
     } finally {
       setIsLoading(false);
@@ -41,21 +40,20 @@ function useFetch (endpoint: string): TUseFetch {
   }, [endpoint]);
 
   useEffect(() => {
-    if (!message) return
+    if (!message) return;
     const timeout = setTimeout(() => {
-      setIsError(false)
-      setMessage('')
-    }, 5000)
+      setIsError(false);
+      setMessage("");
+    }, 5000);
 
-    return () => clearTimeout(timeout)
-  }, [message])
+    return () => clearTimeout(timeout);
+  }, [message]);
 
   useEffect(() => {
     fetchHumanData();
   }, [fetchHumanData]);
 
-
   return { isLoading, humanData, isError, fetchHumanData, message };
-};
+}
 
-export {useFetch};
+export { useFetch };
