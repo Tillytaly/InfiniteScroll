@@ -1,14 +1,14 @@
-import {IHuman} from "../useFetch/types"
-import {TLoadMoreRef} from "../useInfiniteScroll/types"
+import { IHuman } from "../useFetch/types";
+import { TLoadMoreRef } from "../useInfiniteScroll/types";
 
 export type TUseAppProps = {
-    endpoint: string,
-}
+  endpoint: string;
+};
 
 export type TUseApp = {
-isLoading: boolean,
-humanData: IHuman[],
-isError: boolean,
-message: string,
-loadMoreRef: TLoadMoreRef
-}
+  isLoading: boolean;
+  humanData: IHuman[];
+  isError: boolean;
+  message: string;
+  loadMoreRef: TLoadMoreRef;
+};

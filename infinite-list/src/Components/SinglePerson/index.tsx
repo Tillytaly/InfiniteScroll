@@ -1,7 +1,7 @@
 import styles from "./singlePerson.module.scss";
 import { ISinglePerson } from "./types";
 
-const {card, paragraph, photo} = styles
+const { card, paragraph, photo } = styles;
 
 const SinglePerson = ({
   avatar,
@@ -10,7 +10,6 @@ const SinglePerson = ({
   gender,
   age,
 }: ISinglePerson) => {
-
   return (
     <div className={card}>
       <img className={photo} alt="User" src={avatar}></img>

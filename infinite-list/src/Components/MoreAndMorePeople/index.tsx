@@ -2,7 +2,6 @@ import { SinglePerson } from "../SinglePerson";
 import { IMoreAndMorePeopleProps } from "./types";
 
 const MoreAndMorePeople = ({ people }: IMoreAndMorePeopleProps) => {
-
   return (
     <>
       {people.map((person, index) => {

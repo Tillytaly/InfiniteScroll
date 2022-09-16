@@ -30,4 +30,4 @@ function useInfiniteScroll(
   return { loadMoreRef };
 }
 
-export  {useInfiniteScroll};
+export { useInfiniteScroll };
