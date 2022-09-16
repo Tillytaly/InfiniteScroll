@@ -1,5 +1,5 @@
 import MoreAndMorePeople from "./Components/MoreAndMorePeople";
-import { useApp } from "./Helpers/Hooks/useApp";
+import { useApp } from "./Hooks/useApp";
 import { Container } from "./Components/Container";
 import styles from "./App.module.scss";
 
