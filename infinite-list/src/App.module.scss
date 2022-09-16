@@ -1,0 +1,24 @@
+:root {
+  background-color: black;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.paragraph {
+  color: white;
+  font-size: 4rem;
+
+  &.big {
+    font-weight: 600;
+  }
+}
