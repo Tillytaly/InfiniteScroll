@@ -5,7 +5,7 @@ export type TUseAppProps = {
     endpoint: string,
 }
 
-export type TUseAppReturn = {
+export type TUseApp = {
 isLoading: boolean,
 humanData: IHuman[],
 isError: boolean,
