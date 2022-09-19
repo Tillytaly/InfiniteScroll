@@ -1,15 +1,18 @@
+import { useFetch, useInfiniteScroll } from "./Hooks";
 import MoreAndMorePeople from "./Components/MoreAndMorePeople";
-import { useApp } from "./Hooks/useApp";
 import { Container } from "./Components/Container";
 import styles from "./App.module.scss";
+
 
 const { paragraph, big } = styles;
 const urlToFetchData =
   "https://randomuser.me/api/?inc=name,dob,picture,gender&results=10&noinfo";
 
 function App() {
-  const { isLoading, humanData, isError, message, loadMoreRef } =
-    useApp(urlToFetchData);
+  const { isLoading, humanData, isError, message, fetchHumanData } =
+    useFetch(urlToFetchData);
+  const { loadMoreRef } = useInfiniteScroll(fetchHumanData);
+
 
   if (isError) return <p className={`${paragraph} ${big}`}>{message}</p>;
 

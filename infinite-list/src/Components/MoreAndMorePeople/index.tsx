@@ -1,18 +1,19 @@
 import { SinglePerson } from "../SinglePerson";
 import { IMoreAndMorePeopleProps } from "./types";
+import { IHuman } from "../../Types";
 
-const MoreAndMorePeople = ({ people }: IMoreAndMorePeopleProps) => {
+const MoreAndMorePeople = ({ people }: IMoreAndMorePeopleProps<IHuman>) => {
   return (
     <>
-      {people.map((person, index) => {
+      {people.map(({id, avatar, name, surname, gender, age}) => {
         return (
           <SinglePerson
-            key={index}
-            avatar={person.avatar}
-            name={person.name}
-            surname={person.surname}
-            gender={person.gender}
-            age={person.age}
+            key={id}
+            avatar={avatar}
+            name={name}
+            surname={surname}
+            gender={gender}
+            age={age}
           />
         );
       })}
