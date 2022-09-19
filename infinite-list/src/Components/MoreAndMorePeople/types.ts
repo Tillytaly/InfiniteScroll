@@ -1,4 +1,4 @@
-import { IHuman } from "../../Helpers/Hooks/useFetch/types";
+import { IHuman } from "../../Hooks/useFetch/types";
 export interface IMoreAndMorePeopleProps {
   people: IHuman[];
 }
