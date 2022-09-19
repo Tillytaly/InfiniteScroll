@@ -5,24 +5,15 @@ export type TRandomUser = {
   gender: string;
 };
 
-export interface IHuman {
-  id: string;
-  name: string;
-  surname: string;
-  age: number;
-  avatar: string;
-  gender: string;
-}
-
 export type TPromiseObject = {
   results: TRandomUser[];
 };
 
 type TFetchData = () => Promise<void>;
 
-export type TUseFetch = {
+export type TUseFetch<T> = {
   isLoading: boolean;
-  humanData: IHuman[];
+  humanData: T[];
   isError: boolean;
   message: string;
   fetchHumanData: TFetchData;

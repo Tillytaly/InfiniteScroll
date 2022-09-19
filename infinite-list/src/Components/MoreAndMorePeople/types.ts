@@ -1,4 +1,3 @@
-import { IHuman } from "../../Hooks/useFetch/types";
-export interface IMoreAndMorePeopleProps {
-  people: IHuman[];
+export interface IMoreAndMorePeopleProps<T> {
+  people: T[];
 }

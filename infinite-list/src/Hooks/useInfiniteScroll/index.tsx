@@ -11,7 +11,7 @@ function useInfiniteScroll(
     if (target.isIntersecting) {
       onLoad();
     }
-  }, []);
+  }, [onLoad]);
 
   useEffect(() => {
     const options = {
@@ -25,7 +25,7 @@ function useInfiniteScroll(
     if (loadMoreRef.current) observer.observe(loadMoreRef.current);
 
     return () => observer.disconnect();
-  }, []);
+  }, [handleObserver]);
 
   return { loadMoreRef };
 }
