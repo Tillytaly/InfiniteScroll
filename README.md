@@ -1,6 +1,6 @@
 # Infinite Scroll
 
-Main goal of this project was to implement an useInfiniteScroll hook. This functionality is commonly used in mobile apps and on websites such as Facebook or Instagram. The data set displayed on the website come from a public REST API [RandomUser](https://randomuser.me/). A custom hook useFetch was implemented to get the necessary data from API endpoint.
+Main goal of this project was to implement an useInfiniteScroll hook. This functionality is commonly used in mobile apps and on websites such as Facebook or Instagram. The data set displayed on the website comes from a public REST API [RandomUser](https://randomuser.me/). A custom hook useFetch was implemented to get the necessary data from API endpoint.
 
 You can checkout my project live here [infinite-scroll](https://Tillytaly.github.io/infinite-scroll)
 
