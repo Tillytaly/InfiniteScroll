@@ -2,7 +2,7 @@
 
 Main goal of this project was to implement an useInfiniteScroll hook. This functionality is commonly used in mobile apps and on websites such as Facebook or Instagram.
 
-You can checkout my project live here [infinite-scroll]("https://Tillytaly.github.io/infinite-scroll")
+You can checkout my project live here [infinite-scroll](https://Tillytaly.github.io/infinite-scroll)
 
 
 ## Installation 
