@@ -5,7 +5,7 @@ import { IHuman } from "../../Types";
 const MoreAndMorePeople = ({ people }: IMoreAndMorePeopleProps<IHuman>) => {
   return (
     <>
-      {people.map(({id, avatar, name, surname, gender, age}) => {
+      {people.map(({ id, avatar, name, surname, gender, age }) => {
         return (
           <SinglePerson
             key={id}

@@ -6,12 +6,15 @@ function useInfiniteScroll(
 ): TUseInfiniteScrollReturn {
   const loadMoreRef = useRef(null);
 
-  const handleObserver = useCallback((entries: IntersectionObserverEntry[]) => {
-    const [target] = entries;
-    if (target.isIntersecting) {
-      onLoad();
-    }
-  }, [onLoad]);
+  const handleObserver = useCallback(
+    (entries: IntersectionObserverEntry[]) => {
+      const [target] = entries;
+      if (target.isIntersecting) {
+        onLoad();
+      }
+    },
+    [onLoad]
+  );
 
   useEffect(() => {
     const options = {
