@@ -1,6 +1,6 @@
 import React from "react";
 
-export type TLoadMoreRef = React.MutableRefObject<null>;
+export type TLoadMoreRef = React.RefObject<HTMLDivElement>;
 
 export type TUseInfiniteScrollProps = () => Promise<void>;
 
