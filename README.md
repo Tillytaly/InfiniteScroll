@@ -2,6 +2,8 @@
 
 Main goal of this project was to implement an useInfiniteScroll hook. This functionality is commonly used in mobile apps and on websites such as Facebook or Instagram.
 
+You can checkout my project live here [infinite-scroll]("https://Tillytaly.github.io/infinite-scroll")
+
 
 ## Installation 
 In order to open the project locally make sure you have [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/package/npm) installed on your computer.
