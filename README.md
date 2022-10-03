@@ -8,7 +8,7 @@ You can checkout my project live here [infinite-scroll](https://Tillytaly.github
 ## Installation 
 In order to open the project locally make sure you have [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/package/npm) installed on your computer.
 
-Use the console in your favourite IDE to clone the repository
+Use the console in your favourite IDE to clone the repository.
 
 ```bash
 git clone https://github.com/Tillytaly/InfiniteScroll.git
